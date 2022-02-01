@@ -1,0 +1,15 @@
+@import "https://unpkg.com/open-props";
+
+:root {
+	font-size: 10px;
+}
+
+body {
+	background-color: var(--gray-3);
+}
+
+/* .container {
+	max-width: 180rem;
+	width: 98%;
+	margin: 0 auto;
+} */

@@ -1,0 +1,101 @@
+.header {
+	background-color: pink;
+	min-height: 6rem;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.container {
+	max-width: 180rem;
+	display: flex;
+	margin: 0 auto;
+
+	width: 95%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	font-family: "Crimson Pro";
+	font-size: 3rem;
+	display: flex;
+	flex-direction: column;
+
+	position: relative;
+	cursor: pointer;
+}
+
+.logo::after {
+	content: "";
+	border-bottom: 7px solid black;
+	display: block;
+	width: 100%;
+
+	position: absolute;
+	margin-top: 1em;
+	opacity: 0;
+
+	transition: opacity 500ms ease-in;
+}
+
+.logo:hover::after {
+	animation: var(--animation-slide-in-right) forwards;
+	opacity: 0.5;
+}
+
+.nav_list {
+	list-style-type: none;
+	display: flex;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.burger_icon:hover {
+	animation: var(--animation-pulse) forwards;
+	animation-duration: 1500ms;
+	cursor: pointer;
+}
+
+@media (min-width: 768px) {
+	.nav {
+		margin-left: auto;
+	}
+
+	.nav_list {
+		list-style-type: none;
+		display: flex;
+		align-items: center;
+		visibility: initial;
+		width: 100%;
+		font-size: 2rem;
+		font-family: var(--font-mono);
+	}
+
+	.nav_list_item {
+		transition: transform 150ms ease;
+	}
+
+	.nav_list_item:hover {
+		cursor: pointer;
+		transform: scale(0.98);
+	}
+
+	.nav_list_item:hover::after {
+		content: "";
+		display: block;
+		border-bottom: 2px solid black;
+	}
+
+	.nav_list_item + .nav_list_item {
+		margin-left: 1em;
+	}
+
+	.burger_icon {
+		visibility: hidden;
+		width: 0;
+		height: 0;
+	}
+}
