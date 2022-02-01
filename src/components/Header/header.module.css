@@ -9,16 +9,17 @@
 
 .container {
 	max-width: 180rem;
-	display: flex;
 	margin: 0 auto;
-
 	width: 95%;
+
+	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
 .logo {
 	font-family: "Crimson Pro";
+	letter-spacing: 0.5ch;
 	font-size: 3rem;
 	display: flex;
 	flex-direction: column;
@@ -27,12 +28,16 @@
 	cursor: pointer;
 }
 
+.logo:hover {
+	animation: var(--animation-pulse) forwards;
+	animation-duration: 6s;
+}
+
 .logo::after {
 	content: "";
 	border-bottom: 7px solid black;
 	display: block;
 	width: 100%;
-
 	position: absolute;
 	margin-top: 1em;
 	opacity: 0;
@@ -45,57 +50,66 @@
 	opacity: 0.5;
 }
 
+.nav {
+	position: fixed;
+	top: 0;
+	right: -75vw;
+	height: 100vh;
+	z-index: 2;
+	width: 75vw;
+	background-color: rgba(0, 0, 0, 0.94);
+	color: white;
+	padding: 3em;
+
+	transition: transform 0.4s ease-in-out;
+}
+
 .nav_list {
 	list-style-type: none;
-	display: flex;
-	visibility: hidden;
-	width: 0;
-	height: 0;
+	margin-top: 6em;
+}
+
+.nav_list_item {
+	font-size: 2.5rem;
+	font-weight: 600;
+	margin: 0.5em 0;
+}
+
+.icon_container {
+	z-index: 2;
 }
 
 .burger_icon:hover {
-	animation: var(--animation-pulse) forwards;
-	animation-duration: 1500ms;
 	cursor: pointer;
 }
 
 @media (min-width: 768px) {
 	.nav {
-		margin-left: auto;
+		position: static;
+		height: auto;
+		display: flex;
+		justify-content: flex-end;
+		background: none;
+		padding: 0;
 	}
 
 	.nav_list {
-		list-style-type: none;
 		display: flex;
-		align-items: center;
-		visibility: initial;
-		width: 100%;
-		font-size: 2rem;
+		margin: 0;
 		font-family: var(--font-mono);
 	}
 
 	.nav_list_item {
 		transition: transform 150ms ease;
-	}
-
-	.nav_list_item:hover {
-		cursor: pointer;
-		transform: scale(0.98);
-	}
-
-	.nav_list_item:hover::after {
-		content: "";
-		display: block;
-		border-bottom: 2px solid black;
+		font-size: 1.8rem;
+		color: black;
 	}
 
 	.nav_list_item + .nav_list_item {
 		margin-left: 1em;
 	}
 
-	.burger_icon {
-		visibility: hidden;
-		width: 0;
-		height: 0;
+	.icon_container {
+		display: none;
 	}
 }
