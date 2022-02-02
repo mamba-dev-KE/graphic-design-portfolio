@@ -61,7 +61,7 @@
 	color: white;
 	padding: 3em;
 
-	transition: transform 0.3s ease-out;
+	transition: transform 0.3s ease-in-out;
 }
 
 .nav_list {
@@ -88,6 +88,13 @@
 }
 
 @media (min-width: 768px) {
+	.header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		width: 100%;
+	}
 	.nav {
 		position: static;
 		height: auto;

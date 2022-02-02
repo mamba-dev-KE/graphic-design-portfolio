@@ -38,6 +38,11 @@
 	margin: 0 auto;
 }
 
+.intro {
+	margin-left: 4em;
+	margin: 0 auto;
+}
+
 .hello {
 	font-size: 3.3rem;
 	letter-spacing: var(--font-letterspacing-3);
