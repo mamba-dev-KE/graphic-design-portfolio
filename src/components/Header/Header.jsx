@@ -25,8 +25,8 @@ const Header = () => {
 				<span className={styles.logo}>Dennizz</span>
 				<nav className={styles.nav} style={isOpen ? navStyles : null}>
 					<ul className={styles.nav_list}>
-						<li className={styles.nav_list_item}>Projects</li>
 						<li className={styles.nav_list_item}>About</li>
+						<li className={styles.nav_list_item}>Projects</li>
 						<li className={styles.nav_list_item}>Contact</li>
 					</ul>
 				</nav>
