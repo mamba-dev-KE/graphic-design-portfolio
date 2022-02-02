@@ -46,11 +46,12 @@
 }
 
 .hello {
-	font-size: 3.3rem;
+	font-size: 4.3rem;
 	letter-spacing: var(--font-letterspacing-3);
 	text-align: center;
 	text-transform: uppercase;
 	color: white;
+	font-family: "poppins";
 }
 
 .about_text {
@@ -60,6 +61,8 @@
 	text-align: center;
 	max-width: 70rem;
 	line-height: 1.8;
+	font-family: "Proza Libre";
+	margin-top: 1em;
 }
 
 @media (min-width: 789px) {
@@ -68,7 +71,7 @@
 		align-items: center;
 	}
 	.hello {
-		font-size: 4.5rem;
+		font-size: 5.5rem;
 	}
 
 	.about_text {

@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import "@fontsource/crimson-pro/600-italic.css";
+import "@fontsource/poppins/800.css";
+import "@fontsource/proza-libre";
 
 ReactDOM.render(
 	<React.StrictMode>

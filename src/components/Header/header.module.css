@@ -1,6 +1,6 @@
 .header {
 	background-color: pink;
-	min-height: 6rem;
+	min-height: 8rem;
 
 	display: flex;
 	justify-content: space-between;
@@ -73,6 +73,11 @@
 	font-size: 1.8rem;
 	font-weight: 600;
 	margin: 0.5em 0;
+	cursor: pointer;
+}
+
+.nav_list_item:hover {
+	opacity: 0.6;
 }
 
 .icon_container {
@@ -106,14 +111,35 @@
 
 	.nav_list {
 		display: flex;
+		align-items: center;
 		margin: 0;
 		font-family: var(--font-mono);
+		min-height: 7rem;
 	}
 
 	.nav_list_item {
 		transition: transform 150ms ease;
 		font-size: 1.8rem;
 		color: black;
+	}
+
+	.nav_list_item:hover {
+		opacity: 1;
+	}
+
+	.nav_list_item::after {
+		content: "";
+		display: block;
+		border-bottom: 1px solid black;
+		opacity: 0;
+		transition: opacity 150ms ease-in-out;
+	}
+
+	.nav_list_item:hover::after {
+		content: "";
+		display: block;
+		border-bottom: 0.5px solid black;
+		opacity: 1;
 	}
 
 	.nav_list_item + .nav_list_item {
