@@ -15,9 +15,7 @@ const About = () => {
 						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
 						quisquam qui reprehenderit dolorem facilis ad voluptate amet
 						asperiores accusantium tempora quae facere enim ipsum quos non,
-						expedita recusandae harum, rerum nobis quod sint nesciunt natus
-						aliquid officia? Nostrum eligendi, soluta harum architecto rem
-						veritatis iste corrupti facere modi, sint quibusdam!
+						expedita recusandae harum, rerum nobis quod sint nesciunt natus.
 					</p>
 				</div>
 			</div>

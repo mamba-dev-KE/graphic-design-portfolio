@@ -1,5 +1,5 @@
 .about {
-	min-height: 100vh;
+	height: 100vh;
 	background-image: url("https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80");
 	background-repeat: no-repeat;
 	background-position: center right;
@@ -40,11 +40,6 @@
 	margin: 0 auto;
 }
 
-.intro {
-	margin-left: 4em;
-	margin: 0 auto;
-}
-
 .hello {
 	font-size: 4.3rem;
 	letter-spacing: var(--font-letterspacing-3);
@@ -70,6 +65,11 @@
 		flex-direction: row;
 		align-items: center;
 	}
+
+	.intro {
+		margin-left: 4em;
+	}
+
 	.hello {
 		font-size: 5.5rem;
 	}
