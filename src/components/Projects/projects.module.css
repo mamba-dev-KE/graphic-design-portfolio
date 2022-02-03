@@ -6,7 +6,7 @@
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover; */
-	background-image: var(--gradient-10);
+	background-image: var(--gradient-13);
 	font-size: 2rem;
 	/* height: 100vh; */
 	position: relative;
@@ -44,6 +44,7 @@
 	font-size: 2rem;
 	font-family: "Poppins";
 	width: 100%;
+	color: var(--gray-4);
 }
 
 .projects_title {
@@ -51,6 +52,8 @@
 	color: white;
 	text-align: center;
 	padding: 2em 0;
+	font-family: "Poppins";
+	color: var(--gray-9);
 }
 
 .row {
@@ -62,6 +65,7 @@
 
 @media (min-width: 768px) {
 	.projects_title {
-		font-size: 4rem;
+		font-size: 4.5rem;
+		color: var(--gray-8);
 	}
 }
