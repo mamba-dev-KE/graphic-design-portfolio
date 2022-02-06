@@ -5,6 +5,7 @@
 	background-position: center right;
 	background-size: cover;
 	position: relative;
+
 	z-index: 1;
 	display: flex;
 }
@@ -29,6 +30,8 @@
 	width: 100%;
 	pointer-events: none;
 	background: rgba(1, 1, 1, 0.65);
+	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px);
 	z-index: -1;
 }
 

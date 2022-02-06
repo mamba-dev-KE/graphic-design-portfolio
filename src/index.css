@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 @import "https://unpkg.com/open-props";
 
 :root {
