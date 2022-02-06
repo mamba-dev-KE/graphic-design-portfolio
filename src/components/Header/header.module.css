@@ -58,7 +58,7 @@
 }
 
 .logo:hover::after {
-	animation: var(--animation-slide-in-right) forwards;
+	/* animation: var(--animation-slide-in-right) forwards; */
 	opacity: 0.5;
 }
 

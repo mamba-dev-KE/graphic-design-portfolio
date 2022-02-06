@@ -4,7 +4,7 @@ const Projects = () => {
 	return (
 		<section className={styles.projects}>
 			<div className={styles.container}>
-				<h1 className={styles.projects_title}>My Projects</h1>
+				<h2 className={styles.projects_title}>Projects</h2>
 				<div className={styles.row}>
 					<article className={styles.project}>
 						<img
