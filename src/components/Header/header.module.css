@@ -1,11 +1,22 @@
 .header {
-	background-color: rgba(255, 255, 255, 0.9);
-	/* background-color: #e86c4a; */
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: var(--shadow-4);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
 	min-height: 8rem;
 
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+
+	animation: var(--animation-slide-in-down) forwards;
 }
 
 .container {
@@ -20,8 +31,8 @@
 
 .logo {
 	font-family: "Crimson Pro";
-	letter-spacing: 0.5ch;
-	font-size: 3rem;
+	letter-spacing: 0.35ch;
+	font-size: 3.5rem;
 	display: flex;
 	flex-direction: column;
 
@@ -94,13 +105,6 @@
 }
 
 @media (min-width: 768px) {
-	.header {
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 10;
-		width: 100%;
-	}
 	.nav {
 		position: static;
 		height: auto;
