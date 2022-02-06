@@ -12,25 +12,22 @@
 	margin: 0 auto;
 }
 
-/* .projects::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100vh;
-	width: 100%;
-	background-color: rgba(0, 0, 0, 0.75);
-	z-index: -1;
-} */
-
 .project {
 	z-index: 2;
 	color: white;
 	position: relative;
+	cursor: pointer;
+	/* max-width: 30rem; */
+	overflow: hidden;
 }
 
 .project img {
 	object-fit: cover;
+	transition: transform 100ms ease-in;
+}
+
+.project img:hover {
+	transform: scale(1.1);
 }
 
 .project p {
@@ -52,6 +49,7 @@
 	text-align: center;
 	padding: 1em 0;
 	font-family: "Poppins";
+	font-size: var(--size-8);
 	color: var(--gray-8);
 }
 
@@ -65,6 +63,6 @@
 
 @media (min-width: 768px) {
 	.projects_title {
-		font-size: 4.5rem;
+		font-size: var(--size-10);
 	}
 }

@@ -7,10 +7,12 @@ const Projects = () => {
 				<h2 className={styles.projects_title}>Projects</h2>
 				<div className={styles.row}>
 					<article className={styles.project}>
-						<img
-							src="https://images.unsplash.com/photo-1580394640019-00d34094ae13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-							alt=""
-						/>
+						<div className={styles.img_container}>
+							<img
+								src="https://images.unsplash.com/photo-1580394640019-00d34094ae13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+								alt=""
+							/>
+						</div>
 						<p>Project Name</p>
 					</article>
 					<article className={styles.project}>
